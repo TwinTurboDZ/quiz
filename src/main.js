@@ -8,7 +8,7 @@ import mitt from 'mitt'
 const emitter = mitt();
 const pinia = createPinia()
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHistory('/quiz/'),
     routes, // short for `routes: routes`
 })
 

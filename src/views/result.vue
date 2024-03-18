@@ -5,9 +5,12 @@
         </h1>
         <h1>Teba3na f tiktok 
             <img @click="redirectToTikTokAccount()" style="cursor: pointer;height: 40px; width: 40px;background-color: white;" src="@/assets/images/tiktok.png" alt="">
-
         </h1>
-        <p class="result"  > Score dyalk! : <span>{{ QuizStore.userScore }}</span> </p>
+        <p class="result"  >
+            Score dyalk! : 
+            <span>{{ QuizStore.userScore }}</span>
+            {{ QuizStore.userScore }}/{{ Object.keys(QuizStore.quiz).length }}
+        </p>
         <p class="message" >{{ this.QuizStore.userScore >= (Object.keys(this.QuizStore.quiz).length)/2   ? 'CHIKOUR SAHBI!' : 'ZIYER ROHEK!' }}</p>
         <nextButton @click="replay()" >
             <template #Text>ZID KASS!</template>
@@ -74,6 +77,7 @@ export default{
     color : white;
     font-size: 24px;
     font-weight: 600;
+
 }
 .result span{
     color: var(--bgc);

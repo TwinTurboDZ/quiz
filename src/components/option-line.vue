@@ -32,10 +32,10 @@ export default{
 
     gap: 20px;
 
-    transition: all 0.25 ease;
+    transition: all 0.15s ease;
     cursor: pointer;
 }
-.option-holder:hover{
+.option-holder:hover,.option-holder.touched{
     scale: 1.1;
     background-color: rgb(90, 90, 90);
 }
@@ -57,5 +57,9 @@ export default{
     color: #f3f3f3;
 
     font-weight: 700;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 </style>

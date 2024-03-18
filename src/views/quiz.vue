@@ -15,6 +15,7 @@
             </optionLine>
         </div>
         <div style="width: 100%;height: 30px;background-color: gray;" >
+            <div id="adsgoeshere" style="background: #1d1f29; padding-top:60px; text-align: center;" v-html="adsenseContent"></div>
         </div>
 
     </div>
@@ -31,6 +32,7 @@ export default{
             quiz : {},
             image : null,
             selectedOption : null,
+            adsenseContent: ''
         }
     },
     components : {
@@ -57,7 +59,7 @@ export default{
             }
 
             this.quiz.played = true;
-
+            this.quiz.userAnswer = this.selectedOption;
             this.$router.push({name : 'quizSolutionPage' , params : { num : String(Number(this.currentQuizID) )  }  })
         },
         laodQuiz(){
@@ -70,6 +72,9 @@ export default{
         currentQuizID() {
             return this.$route.params.num
         }
+    },
+    mounted(){
+        this.adsenseContent = document.getElementById('divadsensedisplaynone').innerHTML
     }
 }
 </script>
@@ -129,8 +134,8 @@ export default{
 }
 @media only screen and (max-width: 700px) {
     .quizz-media img {
-        height: 100%;
-     width: auto;
+        height: auto;
+        width: 100%;
     }
 }
 </style>

@@ -16,6 +16,7 @@ export  const UseQuizStore = defineStore("QuizStore",{
                 },
                 answer : 'B',
                 played : false,
+                userAnswer : null
             },
             2 : {
                 questions : {
@@ -26,6 +27,7 @@ export  const UseQuizStore = defineStore("QuizStore",{
                 },
                 answer : 'A',
                 played : false,
+                userAnswer : null
             },
             3 : {
                 questions : {
@@ -36,6 +38,7 @@ export  const UseQuizStore = defineStore("QuizStore",{
                 },
                 answer : 'B',
                 played : false,
+                userAnswer : null
             },
             4 : {
                 questions : {
@@ -46,6 +49,7 @@ export  const UseQuizStore = defineStore("QuizStore",{
                 },
                 answer : 'D',
                 played : false,
+                userAnswer : null
             },
             5 : {
                 questions : {
@@ -56,6 +60,7 @@ export  const UseQuizStore = defineStore("QuizStore",{
                 },
                 answer : 'B',
                 played : false,
+                userAnswer : null
             },
             6 : {
                 questions : {
@@ -66,6 +71,7 @@ export  const UseQuizStore = defineStore("QuizStore",{
                 },
                 answer : 'C',
                 played : false,
+                userAnswer : null
             },
             7 : {
                 questions : {
@@ -76,6 +82,7 @@ export  const UseQuizStore = defineStore("QuizStore",{
                 },
                 answer : 'C',
                 played : false,
+                userAnswer : null
             },
             8 : {
                 questions : {
@@ -86,6 +93,7 @@ export  const UseQuizStore = defineStore("QuizStore",{
                 },
                 answer : 'D',
                 played : false,
+                userAnswer : null
             },
             9 : {
                 questions : {
@@ -96,6 +104,7 @@ export  const UseQuizStore = defineStore("QuizStore",{
                 },
                 answer : 'A',
                 played : false,
+                userAnswer : null
             },
             11 : {
                 questions : {
@@ -106,6 +115,7 @@ export  const UseQuizStore = defineStore("QuizStore",{
                 },
                 answer : 'C',
                 played : false,
+                userAnswer : null
             },
             10 : {
                 questions : {
@@ -116,6 +126,7 @@ export  const UseQuizStore = defineStore("QuizStore",{
                 },
                 answer : 'C',
                 played : false,
+                userAnswer : null
             },
             12 : {
                 questions : {
@@ -126,6 +137,7 @@ export  const UseQuizStore = defineStore("QuizStore",{
                 },
                 answer : 'C',
                 played : false,
+                userAnswer : null
             },
             13 : {
                 questions : {
@@ -136,6 +148,7 @@ export  const UseQuizStore = defineStore("QuizStore",{
                 },
                 answer : 'B',
                 played : false,
+                userAnswer : null
             },
             14 : {
                 questions : {
@@ -146,6 +159,7 @@ export  const UseQuizStore = defineStore("QuizStore",{
                 },
                 answer : 'D',
                 played : false,
+                userAnswer : null
             },
 
         },

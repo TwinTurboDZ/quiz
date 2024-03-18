@@ -1,0 +1,26 @@
+:root{
+    --bgc : #2c3e50;;
+    --yellow : #FBC638 ;
+    --btc : #222222;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.holders{
+    
+}
+
+#app{
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    display: grid;
+    grid-template-columns: 15% 1fr 15%;
+    grid-template-rows: 1fr;
+
+    background-color: var(--bgc);
+}
